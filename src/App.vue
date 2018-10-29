@@ -1,12 +1,6 @@
 <template>
   <div id="app">
     <div>
-     <router-link tag="a" to="/hello"  >
-          hello
-      </router-link>
-      <router-link tag="a" to="/world"  >
-          world
-      </router-link>
       <div class="menu" v-if="showMenu">
         <ul class="menuExpandible">
           <li>
@@ -43,8 +37,6 @@
 
 <script>
 import stylesMaterial         from "./css/icons_material.css";
-import HelloWorld from "./components/HelloWorld.vue";
-import NavBar from "./components/nav-bar/viewComponent.vue";
 import Store from "./store";
 export default {
   name: "app",
@@ -68,7 +60,11 @@ export default {
     }
   },
   mounted(){    
-    
+    Store.watch(Store.getters.getlogin, n => {
+      if(!n){
+        this.$router.push('login');
+      }
+    })
   },
   computed:{
     login(){
