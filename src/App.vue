@@ -62,11 +62,7 @@ export default {
     }
   },
   mounted(){    
-    Store.watch(Store.getters.getlogin, n => {
-      if(!n){
-        this.$router.push('login');
-      }
-    })
+    
   },
   computed:{
     login(){
