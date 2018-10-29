@@ -4,7 +4,9 @@ import App from "./App.vue";
 import store from "./store";
 //import router from "./router";
 import Vuex from "vuex";
-import hello from "./components/HelloWorld.vue"
+import hellow from "./components/HelloWorld.vue"
+import hello from "./components/hello.vue"
+import world from "./components/world.vue"
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
@@ -12,7 +14,9 @@ Vue.config.productionTip = false;
 
 const router = new VueRouter({
   mode: 'history',
-  routes: [{ path: '/', component: hello }]
+  routes: [{ path: '/', component: hellow },
+    { path: '/hello', component: hello },
+    { path: '/world', component: world }]
 });
 
 new Vue({

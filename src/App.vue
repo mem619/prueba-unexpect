@@ -1,7 +1,12 @@
 <template>
   <div id="app">
     <div>
-     
+     <router-link tag="a" to="/hello"  >
+          hello
+      </router-link>
+      <router-link tag="a" to="/world"  >
+          world
+      </router-link>
       <div class="menu" v-if="showMenu">
         <ul class="menuExpandible">
           <li>
