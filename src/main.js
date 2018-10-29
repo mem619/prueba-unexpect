@@ -8,7 +8,6 @@ import Vuex from "vuex";
 Vue.use(VueRouter);
 Vue.use(Vuex);
 Vue.config.productionTip = false;
-router.addRoutes([{ path: '/prueba-unexpect', redirect: '/', component: home }])
 new Vue({
   store,
   router,
