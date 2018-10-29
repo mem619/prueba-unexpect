@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div>
+     
       <div class="menu" v-if="showMenu">
         <ul class="menuExpandible">
           <li>
@@ -27,7 +28,7 @@
           <li style="float:left"><a class="active" @click="clickMenu()"><span style="color:red;" class="material-icons">menu</span></a></li>
       </ul>
       <div :style="showMenu?'width:70vw':'width:100vw'" class="contentPrincipal">
-        <router-view></router-view>
+         <router-view></router-view>
       </div>
     </div>
     <!-- <nav-bar v-if="login"></nav-bar> -->

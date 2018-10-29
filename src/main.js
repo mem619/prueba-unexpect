@@ -5,9 +5,11 @@ import store from "./store";
 //import router from "./router";
 import Vuex from "vuex";
 import hello from "./components/HelloWorld.vue"
-Vue.use(Vuex);
+
 Vue.use(VueRouter);
+Vue.use(Vuex);
 Vue.config.productionTip = false;
+
 const router = new VueRouter({
   mode: 'history',
   routes: [{ path: '/', component: hello }]

@@ -2,6 +2,8 @@ import LigaWhatsapp from "./pages/liga/viewComponent.vue";
 import LigaWhatsappConsulta from "./pages/liga/viewComponent_Consult.vue";
 import Historial from "./pages/historial/viewComponent.vue";
 import Login from "./pages/login/viewComponent.vue";
+
+Vue.use(VueRouter);
 const routes = [
     { path: '/', component: LigaWhatsapp },
     { path: '/login', component: Login },
