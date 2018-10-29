@@ -6,11 +6,12 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 Vue.use(VueRouter);
 const routes = [
-    { path: '/', redirect:'/home',component: LigaWhatsapp },
+    
     { path: '/home', component: LigaWhatsapp },
     { path: '/login', component: Login },
     { path: '/ligaConsulta', component: LigaWhatsappConsulta },
-    { path: '/historial', component: Historial }
+    { path: '/historial', component: Historial },
+    { path: '/', redirect:'/home',component: LigaWhatsapp },
 ];
 
 export default routes
